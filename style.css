@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #b57fe7;
+    }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+}
+body{
+    background-repeat: repeat;
+    position: absolute;
+    opacity: 90%;
+    border: 3px dashed salmon;
+    border-radius: 5px;
+}
+button{
+    position: relative;
+    z-index: 1;
+}

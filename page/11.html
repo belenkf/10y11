@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="BelenFabbrizi" content="java">
+    <title>10y11</title>
+<html>
+<head>
+    <meta>
+    <title > tarea java </title >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link style="ccs" href ="../style.css" >
+</head>
+  
+<body>
+    <h1>tarea con JavaScript</h1>
+    <button><p>10 <a href="./10.html"></a></p></button>
+     <button> <p>Indice <a href="../index.html"></a></p></button>
+       <!--  <div class="formulario">
+            <label for="guessField"></label>
+            <tipo de entrada  = "texto" id = "boton_inicial " clase = " boton_inicial " ></tipo>
+            <tipo de entrada  = "enviar " valor = " " clase = "" id = " " >
+        </div>--> 
+
+ <div>
+    <button onclick="Ejercicio_diario()"> <h1>Ejercicio_diario</h1></button>
+  </div>
+  <div>
+    <button onclick="de20_a70()"><h1>de20_a70</h1></button>
+  </div>
+  <div>
+    <button onclick="repeticion()"> <h1>repeticion</h1></button>
+  </div>
+  <script>
+    function  Ejercicio_diario(){
+        let entrenodia = prompt("Que dia es hoy:");
+        switch (entrenodia) {
+        case "lunes":
+            alert("Hoy cuesta arrancar pero ponele pilas y salí a comerte el mundo, te toca hacer tela");
+        break;
+        case "martes":
+            alert("Hoy salí a caminar al menos 1 hora, después elongás en casa con música relajante, baño y a la cama");
+        break;
+        case "miercoles":
+            alert("Dale que es mitad de semana!! toca tela pero enfocá en la relajación que viene después y que vas a dormir como un angelito");
+        break;
+        case "jueves":
+            alert("Hoy probá con algunas posturas nuevas de Yoga si hace frío, sinó pilas y a caminar con música al palo");
+        break;
+        case "viernes":
+            alert("Llegaste al viernes! Sí, hoy sale bicicleteada o limpiar un poco el depto");
+        break;
+        case "sabado":
+            alert("Si tenés ganas, después del Hospi te toca Bici o Rollers");
+        break;
+        case "domingo":
+            alert("Hoy se descansa!!");
+        break;
+        default:
+            alert("Escribe el día de la semana en minúsculas para poder ver el plan de ejercicio que corresponde.");
+        }
+    }
+    function de20_a70(){
+        for(i=20;i<=70;i++){
+            document.write("El número es: " + i + "<br>");
+        }
+    }
+    function repeticion(){
+        var cantidad = prompt("Selecciona la cantidad de veces que quieras que te diga TE QUIERO.")
+        for(i=1;i<=cantidad;i++){
+            document.write(i + "- 'TE QUIERO'" + "<br>");
+        /* default:
+            alert("te voy a decir TE QUIERO igual."); */
+        }
+    }
+    </script>

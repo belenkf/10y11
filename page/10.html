@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="BelenFabbrizi" content="java">
+    <title>10 y 11</title>
+<html>
+<head>
+    <meta>
+    <title > tarea java </title >
+    <link style="estilo" href ="../style.css " >
+</head>
+  
+<body>
+    <h1>tarea con JavaScript</h1>
+    <button><p>11 <a href="./11.html"></a></p></button>
+     <button> <p>Indice <a href="../index.html"></a></p></button>
+       <!--  <div class="formulario">
+            <label for="guessField"></label>
+            <tipo de entrada  = "texto" id = "boton_inicial " clase = " boton_inicial " ></tipo>
+            <tipo de entrada  = "enviar " valor = " " clase = "" id = " " >
+        </div>--> 
+
+    <div>
+        <button onclick="primer_línea()"><h2>primer_línea</h2></button>
+    </div>
+
+    <div>
+        <button onclick="frase()"><h2>Frase</h2></button>
+    </div>
+
+    <div>
+        <button onclick="concatenar()"><h2>Concatenar</h2></button>
+    </div>
+
+    <div>
+        <button onclick="nombre_edad()"><h2>nombre_edad</h2></button>
+    </div>
+
+    <div>
+        <button onclick="permiso()"><h2>permiso</h2></button>
+    </div>
+    <script>
+        
+        function primer_línea(){
+            let nombre = "Programación " + " Fácil. ";
+            let saludo = "Les doy la bienvenida a ";
+            let info = "Mi nombre es " + "Belen Fabbrizi."
+            let fraseCompleta = saludo + nombre + info;
+            console.log(fraseCompleta);
+            alert(fraseCompleta);
+        }
+        
+        function frase(){
+            let frase = "JavaScript " + "es un lenguaje " + "esencial para crear " + "sitios web poderosos.";
+            console.log(frase);
+            alert(frase);
+        }
+
+        function concatenar(){
+            let numeroString1 = "10, ";
+            let numeroString2 = "20  y";
+            let numeroString3 = "30";
+            let inicio = "Los siguientes numeros: "
+            let fin = "son multiplos de 10."
+            let concatenaNumeros = inicio + numeroString1 + " " + numeroString2 + " " + numeroString3 + " " + fin;
+            console.log(concatenaNumeros);
+            alert(concatenaNumeros);
+        }
+
+        function nombre_edad(){
+            var nombre1 = prompt("Cual es tu nombre: ");
+            var edad = prompt("Cual es tu edad: ");
+            var concatenamos = "Mi nombre es " + nombre1 + " y tengo " + edad + " años";
+            console.log(concatenamos);
+            alert(concatenamos);
+        }
+
+        function permiso(){
+            let edad;
+            edad = prompt("Indica tu edad");
+            var sexo;
+            sexo = prompt("Indica si eres femenina o masculino");
+            if (sexo == 'masculino' && edad >= 18){
+                alert("Puedes entrar, eres mayor de edad.");
+            } 
+            else if (sexo == 'femenino' && edad >= 20){
+                alert("Puedes entrar, eres mayor de edad.");
+            }
+            else {
+                alert("No puedes entrar, eres menor de edad.");
+            } 
+        }
+    </script>
+
+<script src="./js/"></script>
+</body>
+</html>
